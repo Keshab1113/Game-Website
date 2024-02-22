@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Brutal_Light, "Open Sans", arial;
+}
+
+/* Header Style */
+header {
+    display: flex;
+    background-color: #18181c;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+header nav {
+    flex-direction: row;
+    /* width: 40%; */
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+header nav ul li {
+    transition: all 0.2s linear;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+header nav ul li:hover {
+    background-color: #434345;
+    cursor: pointer;
+    color: white;
+    opacity: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e6e6f1;
+    opacity: 70%;
+    font-size: 14px;
+}
+
+header .firstLogo {
+    display: flex;
+    height: 100%;
+    width: 7.2%;
+    justify-content: center;
+    align-items: center;
+}
+
+header .firstLogo svg,
+.searchIcon svg,
+.rightheader svg {
+    color: #e6e6f1;
+    fill: currentColor;
+    height: 20px;
+    opacity: 70%;
+    transition: all 0.2s linear;
+}
+
+header .firstLogo svg,
+.searchIcon svg,
+.aboutIcon,
+.rightheader svg:hover {
+    cursor: pointer;
+    opacity: 100%;
+    color: white;
+}
+
+.child {
+    transition: all 0.2s linear;
+    margin-left: 5px;
+}
+
+.child:hover {
+    transform: translateY(2px);
+}
+
+
+
+
+.middleHeader {
+    display: flex;
+    /* height: 100%; */
+    width: 73%;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid rgb(59, 55, 55);
+    border-left: 2px solid rgb(59, 55, 55);
+    padding-left: 23.5px;
+    /* margin: 5px 5px 5px 5px; */
+}
+
+.HeaderOptions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.searchIcon {
+    margin-right: 22px;
+    background: unset;
+    border: none;
+}
+
+.searchInput {
+    outline: none;
+    border: none;
+    height: 25px;
+    width: 205px;
+    padding-left: 10px;
+}
+
+.searchCross {
+    background: unset;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#myOverlay {
+    display: none;
+
+}
+
+.rightheader {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.rightheader button {
+    height: 33px;
+    width: 46%;
+    border-radius: 7px;
+    background-color: rgb(102, 155, 221);
+    border: none;
+    color: rgb(43, 42, 42);
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.2s linear;
+}
+
+.rightheader button:hover {
+    cursor: pointer;
+    background-color: rgb(126, 175, 236);
+}
+
+.aboutIcon {
+    background-color: #3b3b3c;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(151, 149, 149);
+    transition: all 0.2s linear;
+}
+
+.aboutIcon:hover {
+    color: white;
+    opacity: 100%;
+}
+
+.rightheader i {
+    opacity: 70%;
+}
+
+/* Header Style Ends */
+
+/* videoScreen Style Start */
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0b0b34;
+    overflow: hidden;
+    position: relative;
+}
+
+#myVideo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-heading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 55px;
+}
+
+.video-heading .heading {
+    font-size: 70px;
+    color: white;
+    font-family: Brutal_Light, "Open Sans", arial;
+    line-height: 75px;
+    font-weight: lighter;
+}
+
+.headingButton {
+    width: 20%;
+    height: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: unset;
+    border: 1px solid rgb(60, 172, 233);
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+}
+
+.headingButton:hover {
+    box-shadow: 0px 2px 30px 10px rgba(62, 173, 243, 0.8);
+}
+
+/* VideoScreen Style Ends */
+
+/* Home Page 1 Start Here */
+
+.homepage1 {
+    height: 100%;
+    background-color: rgb(195, 215, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.headingHomepage1 {
+    font-size: 50px;
+    font-family: Brutal_Light, "Open Sans", arial;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.subHeadingHomepage1 {
+    width: 40%;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    opacity: 70%;
+    line-height: 30px;
+}
+
+.homepage1Options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20rem;
+    /* background-color: azure; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.homepage1Option {
+    width: 30%;
+    height: 100%;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid rgb(9, 165, 222);
+    padding-top: 20px;
+    justify-content: space-around;
+
+}
+
+.homepage1Option p {
+    opacity: 70%;
+    line-height: 30px;
+}
+
+.homepage1Option h1 {
+    font-size: 30px;
+    font-family: Brutal_Light, "Open Sans", arial;
+    font-weight: 100;
+}
+
+.homepage1OptionButton {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid rgb(57, 159, 237);
+    font-weight: bold;
+    width: max-content;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+
+.homepage1OptionButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 5px rgba(89, 62, 243, 0.8);
+}
+
+/* Home Page 1 Ends Here */
+
+/* Home Page 2 Start Here */
+.homepage2 {
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homepage2Heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    border-bottom: 1px solid #0b0b34;
+}
+
+.headingHomepage2 {
+    font-size: 35px;
+    font-family: Brutal_Light, "Open Sans", arial;
+    font-weight: 100;
+}
+
+.subHeadingHomepage2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #31c4e9;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.homepage2Options {
+    display: flex;
+    width: 90%;
+    /* overflow: hidden; */
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.homepage2Option {
+    width: 32%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.homepage2OptionImage {
+    width: 100%;
+    height: 13rem;
+    overflow: hidden;
+}
+
+.homepage2OptionImage img {
+    height: 13rem;
+    width: 100%;
+}
+
+.description {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.descriptionSmallHeading {
+    font-size: 12px;
+    font-family: Brutal_Light, "Open Sans", arial;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.descriptionHeading {
+    font-size: 25px;
+    font-family: Brutal_Light, "Open Sans", arial;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descriptionButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+    width: max-content;
+    background-color: unset;
+    text-transform: uppercase;
+    text-decoration-color: rgb(47, 143, 239);
+    text-decoration-thickness: 2px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+
+.AllDescription {
+    opacity: 90%;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Home Page 2 Ends Here */
+
+
+/* About Page Start Here */
+.aboutPage {
+    height: 100vh;
+    background: url("https://media.contentapi.ea.com/content/dam/eacom/skate/common/skate-about-section-bg-xl.jpg.adapt.320w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPageHeading {
+    color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aboutPageParagraph {
+    color: white;
+    width: 40%;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/* About Page Ends Here */
+
+/* Purchase Page Start Here */
+.purchasePage {
+    height: 100vh;
+    background: url('https://xxboxnews.blob.core.windows.net/prod/sites/2/2022/09/FREESTYLIN_FINAL_LANDSCAPE_1920X1080_JPG-9928423d535d3d18f841.jpg');
+    display: flex;
+}
+
+.purchasePageOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.purchasePageOption {
+    background: url('./images/Highlight.png');
+    background-position: center;
+    object-fit: cover;
+    width: 55%;
+    height: 45px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.purchasePageButton {
+    background-color: rgb(248, 151, 24);
+    color: white;
+    background-position: center;
+    object-fit: cover;
+    width: 55%;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: all 0.2s linear;
+}
+
+.purchasePageButton:hover {
+    background: url('./images/Highlight.png');
+    color: black;
+    background-position: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.purchasePageOption option {
+    background-color: #0f0f11;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.purchasePageOption option:hover {
+    background: url('./images/Highlight.png');
+}
+
+.purchasePageRightSide {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchasePageRightSideMini {
+    height: 70%;
+    width: 70%;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(100, 165, 230);
+    text-decoration-thickness: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Purchase Page Ends Here */
+
+/* Community Page Start Here */
+.communityPage {
+    height: 100vh;
+    background: url("https://media.contentapi.ea.com/content/dam/eacom/skate/common/skate-about-section-bg-xl.jpg.adapt.320w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.communityPageUp {
+    height: 80vh;
+    background: url('./images/community.png');
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+.communityPageDown {
+    height: 20vh;
+    /* background-color: #31c4e9; */
+    display: flex;
+    justify-content: end;
+}
+
+.communityPageDown div {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.communityPageDown div i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.communityPageUp h1,
+.communityPageUpSubHead,
+.communityPageUpButton {
+    margin-left: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.communityPageUpButton {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #0f0f11;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Community Page Ends Here */
+
+
+/* Footer Style Start */
+footer {
+    height: 100vh;
+    background-color: white;
+}
+
+.footerCommunity {
+    background-color: #3b3b3c;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InnerfooterCommunity {
+    width: 90%;
+    height: 90%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InnerfooterCommunitySponser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InnerfooterCommunitySponser img {
+    cursor: pointer;
+}
+
+.InnerfooterCommunityImage {
+    width: 35px;
+    height: 35px;
+}
+
+.InnerfooterCommunityImage2 {
+    width: 95px;
+    height: 60px;
+}
+
+.Mainfooter {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: rgb(14, 17, 40);
+    color: white;
+}
+
+.MainfooterLists {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.MainfooterLists ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.MainfooterLists ul li {
+    line-height: 30px;
+    transition: all 0.2s linear;
+}
+
+.MainfooterLists ul li:hover {
+    color: rgb(39, 124, 243);
+    cursor: pointer;
+}
+
+.footerBottom {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(14, 17, 40);
+}
+
+.footerBottomMain {
+    height: 100%;
+    width: 90%;
+    border-top: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerBottomMain h4 {
+    font-size: 12px;
+}
+
+.footerBottomMainButtons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBottomMainButton {
+    display: flex;
+    justify-content: start;
+}
+
+.footerBottomMainButton button {
+    background: unset;
+    border: none;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.footerBottomMainButton button:hover {
+    color: rgb(63, 127, 245);
+    cursor: pointer;
+}
+
+.footerBottomMainButtonImages:hover {
+    cursor: pointer;
+}
+
+.footerBottomMainButtonAll {
+    margin-right: 20px;
+}
+
+
+/* Contact Page Start Here */
+.ContactUsPage {
+    height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ContactUsPagebox {
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* padding: 30px; */
+}
+
+.box2 {
+    border: 4px solid white;
+    transition: all 0.2s linear;
+}
+
+.box2:hover {
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.box2 p,
+.box2 h4,
+.box2 h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.box2 h4 {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.box2 h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 100;
+    /* line-height: 40px; */
+}
+
+.box2 p {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.box1 h2 {
+    font-size: 60px;
+    /* line-height: 70px; */
+    font-weight: 100;
+
+}
+
+.box1 p {
+    line-height: 30px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}

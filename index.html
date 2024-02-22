@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unreal Engine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Header section Starts Here-->
+    <header>
+      <div class="firstLogo">
+        <img src="images/epic_logo.png" height="32" alt="" srcset="" />
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="child"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.53 7.47a.75.75 0 0 0-1.06 0L10 11.94 5.53 7.47a.75.75 0 0 0-1.06 1.06L10 14.06l5.53-5.53a.75.75 0 0 0 0-1.06Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <div class="middleHeader">
+        <div class="HeaderOptions">
+          <img
+            class=""
+            fetchpriority="high"
+            height="32"
+            alt="Unreal Engine Logo"
+            src="https://media.graphassets.com/qiFQiyH6TiuMdOIA5yZJ"
+            width="233"
+          />
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Purchase</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="searchIcon" id="searchIcon" onclick="openSearch()">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M10.5 2.25a8.25 8.25 0 1 0 5.28 14.59l4.69 4.69a.75.75 0 1 0 1.06-1.06l-4.69-4.69A8.25 8.25 0 0 0 10.5 2.25ZM3.75 10.5a6.75 6.75 0 1 1 13.5 0 6.75 6.75 0 0 1-13.5 0Z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div id="myOverlay">
+          <input type="search" name="" class="searchInput" />
+          <button onclick="closeSearch()" class="searchCross">X</button>
+        </div>
+      </div>
+      <div class="rightheader">
+        <svg viewBox="0 0 24 24">
+          <path
+            fill-rule="evenodd"
+            d="M3.784 11.25h3.99c.153-2.35.994-4.44 1.815-5.969.282-.525.564-.988.82-1.378a8.255 8.255 0 0 0-6.625 7.347ZM12 4.232c-.305.43-.697 1.03-1.09 1.759-.75 1.398-1.481 3.237-1.632 5.259h5.444c-.15-2.022-.882-3.861-1.633-5.259-.392-.73-.784-1.33-1.089-1.76Zm2.722 8.518H9.278c.15 2.022.882 3.861 1.633 5.259.392.73.784 1.33 1.089 1.76.305-.43.697-1.03 1.09-1.76.75-1.398 1.481-3.237 1.632-5.259Zm-4.313 7.347c-.256-.39-.538-.853-.82-1.378-.82-1.528-1.662-3.618-1.815-5.969h-3.99a8.255 8.255 0 0 0 6.625 7.347Zm3.182 0c.256-.39.538-.853.82-1.378.82-1.528 1.662-3.618 1.815-5.969h3.99a8.255 8.255 0 0 1-6.625 7.347Zm6.625-8.847h-3.99c-.153-2.35-.994-4.44-1.815-5.969a18.45 18.45 0 0 0-.82-1.378 8.255 8.255 0 0 1 6.625 7.347ZM2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <div class="aboutIcon">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <button>Download</button>
+      </div>
+    </header>
+    <!-- Header section Starts Here-->
+
+    <!-- Home Image Start -->
+
+    <div id="video-container">
+      <video autoplay muted loop id="myVideo">
+        <source src="images/home.mp4" type="video/mp4" />
+      </video>
+      <div class="video-heading" id="video-heading">
+        <h1 class="heading">Built by developers.</h1>
+        <h1 class="heading">For developers.</h1>
+        <h1 class="heading">With fair terms for all.</h1>
+        <h1 class="heading">Let's build incredible things together.</h1>
+        <button class="headingButton">learn more about us</button>
+      </div>
+    </div>
+
+    <!-- Home Image Ends -->
+
+    <!-- Home Page 1 Start Here -->
+    <div class="homepage1">
+      <h1 class="headingHomepage1">Create without limits</h1>
+      <p class="subHeadingHomepage1">
+        With Unreal Engine, you can bring amazing real-time experiences to life
+        using the world’s most advanced real-time 3D creation tool. From first
+        projects to the most demanding challenges, our free and accessible
+        resources and inspirational community empower everyone to realize their
+        ambitions.
+      </p>
+      <div class="homepage1Options">
+        <div class="homepage1Option">
+          <h1>Learn Unreal Engine</h1>
+          <p>
+            With hundreds of hours of free online learning content, an extensive
+            library of webinars, and options for instructor-led training, we
+            have a way to learn that's right for you.
+          </p>
+          <button class="homepage1OptionButton">Start Learning</button>
+        </div>
+        <div class="homepage1Option">
+          <h1>Join the community</h1>
+          <p>
+            Unreal creators are the true power behind Unreal Engine. Be part of
+            a community that builds cutting-edge experiences, and supports each
+            other along the way.
+          </p>
+          <button class="homepage1OptionButton">Visit community</button>
+        </div>
+        <div class="homepage1Option">
+          <h1>Get support</h1>
+          <p>
+            Explore comprehensive reference documentation, instructional guides,
+            community-based support, and options for dedicated professional
+            support.
+          </p>
+          <button class="homepage1OptionButton">See suport options</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Page 1 Ends Here -->
+
+    <!-- Home Page 2 Start Here -->
+    <div class="homepage2">
+      <div class="homepage2Heading">
+        <h1 class="headingHomepage2">The latest from Unreal Engine</h1>
+        <h1 class="subHeadingHomepage2">see all news & events</h1>
+      </div>
+      <div class="homepage2Options">
+        <div class="homepage2Option">
+          <div class="homepage2OptionImage">
+            <img
+              src="https://cdn2.unrealengine.com/unreal-engine-5-3-feed-1920x1080-e05ac05953f4.png?resize=1&w=533"
+              alt=""
+              srcset=""
+              class="zoom"
+            />
+          </div>
+          <div class="description">
+            <h3 class="descriptionSmallHeading">News</h3>
+            <h2 class="descriptionHeading">
+              Unreal Engine 5.3 is now available!
+            </h2>
+            <p class="AllDescription">
+              This release brings numerous wide-ranging improvements, together
+              with some exciting new Experimental features, as we continue to
+              expand UE5’s functionality and potential for game developers and
+              creators across industries. Find out what’s new.
+            </p>
+            <button class="descriptionButton">find out more</button>
+          </div>
+        </div>
+        <div class="homepage2Option">
+          <div class="homepage2OptionImage">
+            <img
+              src="https://cdn2.unrealengine.com/uefn-1920x1080-1920x1080-15d844659791.png?resize=1&w=533"
+              alt=""
+              srcset=""
+              class="zoom"
+            />
+          </div>
+          <div class="description">
+            <h3 class="descriptionSmallHeading">News</h3>
+            <h2 class="descriptionHeading">
+              Unreal Editor for Fortnite is now available in Public Beta!
+            </h2>
+            <p class="AllDescription">
+              Unreal Editor for Fortnite (UEFN) combines the power of Unreal
+              Engine with the scale of Fortnite. Use development tools to build
+              games and experiences that can be unlike anything seen in Fortnite
+              so far and publish for millions of players to enjoy.
+            </p>
+            <button class="descriptionButton">find out more</button>
+          </div>
+        </div>
+        <div class="homepage2Option">
+          <div class="homepage2OptionImage">
+            <img
+              src="https://cdn2.unrealengine.com/landing-page-feed-01-1920x1080-cef4e1d3076a.jpg?resize=1&w=533"
+              alt=""
+              srcset=""
+              class="zoom"
+            />
+          </div>
+          <div class="description">
+            <h3 class="descriptionSmallHeading">Event</h3>
+            <h2 class="descriptionHeading">GDC 2023</h2>
+            <p class="AllDescription">
+              Join Epic Games at GDC 2023 for the State of Unreal, insightful
+              tech talks, and the chance to play the latest Unreal Engine games
+              at our booths on the show floor.
+            </p>
+            <button class="descriptionButton">find out more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home Page 2 Ends Here -->
+
+    <!-- About Page Start Here -->
+    <div class="aboutPage">
+      <h1 class="aboutPageHeading">About Us</h1>
+      <p class="aboutPageParagraph">
+        Introducing Skater Republic, the thrilling upcoming arcade game that
+        puts you right in the heart of a dynamic skateboarding adventure!
+        Explore expansive skateparks, bustling cityscapes, and renowned
+        real-life locations for an immersive experience like no other. Featuring
+        intuitive controls, a sophisticated trick system, and a compelling
+        progression framework, players will find themselves immersed in a world
+        where every achievement feels truly gratifying.<br />
+        Keep an eye out as we work diligently to bring this extraordinary gaming
+        experience to life.
+      </p>
+    </div>
+    <!-- About Page Ends Here -->
+
+    <!-- Purchase Page Start Here -->
+    <div class="purchasePage">
+      <div class="purchasePageOptions">
+        <select id="countries" class="purchasePageOption">
+          <option value="volvo" class="abc">India</option>
+          <option value="saab">bangladesh</option>
+          <option value="opel">Sri lanka</option>
+          <option value="audi">russia</option>
+        </select>
+        <select id="cars" class="purchasePageOption">
+          <option value="volvo">Nintendo switch</option>
+          <option value="saab">epic</option>
+          <option value="opel">xbox series x|s</option>
+          <option value="audi">ps4</option>
+          <option value="audi">ps5</option>
+        </select>
+        <select id="cars" class="purchasePageOption">
+          <option value="volvo">Digital edition</option>
+          <option value="saab">Digital deluxe edition</option>
+        </select>
+        <button class="purchasePageButton">Purchase</button>
+      </div>
+      <div class="purchasePageRightSide">
+        <div class="purchasePageRightSideMini">
+          <h1>DIGITAL EDITION</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Purchase Page Ends Here -->
+    <!-- Contact Page Start Here -->
+    <div class="ContactUsPage">
+      <div class="ContactUsPagebox box1">
+        <h2>Free download—includes every feature!</h2>
+        <p>
+          Unreal Engine comes fully loaded and production-ready out of the box,
+          with every feature and full source code access included.
+        </p>
+      </div>
+      <div class="ContactUsPagebox box2">
+        <h4>GET UNREAL ENGINE</h4>
+        <h2>Get started for free!</h2>
+        <p>
+          Unreal Engine is free to use for creating linear content, custom
+          projects, and internal projects. It's also free to get started for
+          game development—a 5% royalty only kicks in when your title earns over
+          $1 million USD.
+        </p>
+      </div>
+      <div class="ContactUsPagebox box2">
+        <h4>TALK TO US</h4>
+        <h2>Other license options</h2>
+        <p>
+          Looking for premium support, private training, custom terms, or a
+          direct relationship with Epic Games? Talk to us about an Unreal
+          Enterprise Program license or custom solution.
+        </p>
+      </div>
+    </div>
+    <!-- Community Page Start Here -->
+    <div class="communityPage">
+      <div class="communityPageUp">
+        <h1>Join The Community</h1>
+        <h3 class="communityPageUpSubHead">
+          The official skate. Discord server
+        </h3>
+        <button class="communityPageUpButton">
+          join<i class="fa-brands fa-discord"></i>
+        </button>
+      </div>
+      <div class="communityPageDown">
+        <div>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitch"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-reddit"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Community Page Ends Here -->
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footerCommunity">
+        <div class="InnerfooterCommunity">
+          <div class="InnerfooterCommunitySponser">
+            <img
+              src="https://media.contentapi.ea.com/content/dam/eacom/skate/common/ea-medallion-white.png"
+              alt=""
+              class="InnerfooterCommunityImage"
+            />
+            <img
+              src="https://media.contentapi.ea.com/content/dam/eacom/studios/full-circle/common/fullcircle-placeholder-tile-ea-studios-page.png"
+              alt=""
+              class="InnerfooterCommunityImage2"
+            />
+            <img
+              src="./images/skate-nav-logo-white.svg"
+              alt=""
+              class="InnerfooterCommunityImage2"
+            />
+          </div>
+          <img src="./images/esrb-rating-pending.svg" alt="" />
+        </div>
+      </div>
+      <div class="Mainfooter">
+        <div class="MainfooterLists">
+          <h3>GAMES</h3>
+          <ul>
+            <li>Fortnite</li>
+            <li>Fall Guys</li>
+            <li>Rocket League</li>
+            <li>Unreal Tournament</li>
+            <li>Infinity Blade</li>
+            <li>Shadow Complex</li>
+            <li>Robo Recall</li>
+          </ul>
+        </div>
+        <div class="MainfooterLists">
+          <h3>MARKETPLACES</h3>
+          <ul>
+            <li>Epic Games Store</li>
+            <li>Fab</li>
+            <li>Sketchfab</li>
+            <li>Unreal Engine Marketplace</li>
+            <li>ArtStation</li>
+            <li>Store Refund Policy</li>
+            <li>Store EULA</li>
+          </ul>
+        </div>
+        <div class="MainfooterLists">
+          <h3>TOOLS</h3>
+          <ul>
+            <li>Unreal Engine</li>
+            <li>UEFN</li>
+            <li>MetaHuman</li>
+            <li>Twinmotion</li>
+            <li>Megascans</li>
+            <li>RealityScan</li>
+            <li>Rad Game Tools</li>
+          </ul>
+        </div>
+        <div class="MainfooterLists">
+          <h3>ONLINE SERVICES</h3>
+          <ul>
+            <li>Epic Online Services</li>
+            <li>Kids Web Services</li>
+            <li>Services Agreement</li>
+            <li>Acceptable Use Policy</li>
+            <li>Trust Statement</li>
+            <li>Subprocessor List</li>
+          </ul>
+        </div>
+        <div class="MainfooterLists">
+          <h3>RESOURCES</h3>
+          <ul>
+            <li>Dev Community</li>
+            <li>MegaGrants</li>
+            <li>Support-A-Creator</li>
+            <li>Creator Agreement</li>
+            <li>Distribute on Epic Games</li>
+            <li>Unreal Engine Branding Guidelines</li>
+            <li>Fan Art Policy</li>
+            <li>Community Rules</li>
+            <li>EU Digital Services Act Inquiries</li>
+          </ul>
+        </div>
+        <div class="MainfooterLists">
+          <h3>COMPANY</h3>
+          <ul>
+            <li>About</li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li>Students</li>
+            <li>UX Research</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <div class="footerBottomMain">
+          <h4>
+            © 2004-2024, Epic Games, Inc. All rights reserved. Unreal and its
+            logo are Epic’s trademarks or registered trademarks in the US and
+            elsewhere.
+          </h4>
+          <div class="footerBottomMainButtons">
+            <div class="footerBottomMainButton">
+              <button class="footerBottomMainButtonAll">
+                Terms of service
+              </button>
+              <button class="footerBottomMainButtonAll">Privacy policy</button>
+              <button class="footerBottomMainButtonAll">
+                Safety & security
+              </button>
+            </div>
+            <div class="footerBottomMainButtonImages">
+              <img
+                src="./images/epic_logo.png"
+                alt=""
+                width="30px"
+                height="30px"
+              />
+              <img
+                src="https://cdn2.unrealengine.com/ue-logo-white-e34b6ba9383f.svg"
+                alt=""
+                width="30px"
+                height="30px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
